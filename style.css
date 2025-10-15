@@ -69,6 +69,10 @@ nav h1{
     color: #22d3ee;
 }
 
+.hamburger-btn{
+    display: none;
+}
+
 /* style hero */
 main section{
     position: relative;
@@ -137,4 +141,26 @@ main section p{
 .btn-outline:hover {
     background-color: #22d3ee;
     color: black;
+}
+
+
+
+
+
+
+
+/* responif */
+@media (max-width: 768px) {
+    .nav-list{
+        display: none;
+    }
+    .hamburger-btn{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-list.active{
+        display: flex;
+        flex-direction: column;
+    }
 }
