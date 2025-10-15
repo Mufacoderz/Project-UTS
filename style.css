@@ -29,7 +29,7 @@ nav{
     justify-content: space-between;
     border-radius: 12px;
     background: rgba(0,0,0,0.7);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 nav h1{
@@ -40,10 +40,10 @@ nav h1{
 }
 
 .tech{
-    color: #E5E7EB;
+    color: #e5e7eb;
 }
 .gear{
-    color: #22D3EE;
+    color: #22d3ee;
 }
 
 .tech, .gear{
@@ -60,13 +60,13 @@ nav h1{
 }
 
 .nav-list a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.1s;
 }
 
 .nav-list a:hover {
-    color: #22D3EE;
+    color: #22d3ee;
 }
 
 /* style hero */
@@ -77,13 +77,64 @@ main section{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 100%;
+    background:  url(hero.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
 }
 
 main section h1{
     font-size: 80px;
+    color: white;
 }
 
 main section p{
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 500;
+    color: #e5e7eb;
+    font-style: italic;
+}
+
+.cta-buttons {
+    margin-top: 2rem;   /*pxnya brpa*/
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+}
+
+  /* Tombol utama */
+.btn-primary {
+    background-color: #22d3ee;
+    color: black;
+    transition: all 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a1e9f4;
+    color: black;
+}
+
+  /* Tombol kedua */
+.btn-outline {
+    border: 2px solid #22d3ee;
+    color: #22d3ee;
+    transition: all 0.1s ease;
+}
+
+.btn-outline:hover {
+    background-color: #22d3ee;
+    color: black;
 }
