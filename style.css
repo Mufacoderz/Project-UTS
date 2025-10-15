@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif; 
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* style navbar */
+
+nav{
+    position: fixed;
+    top: 16px;
+    left: 5%;
+    width: 90%;
+    padding: 12px 32px;
+    backdrop-filter: blur(12px);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+nav h1{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.tech{
+    color: #E5E7EB;
+}
+.gear{
+    color: #22D3EE;
+}
+
+.tech, .gear{
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.nav-list{
+    display: flex;
+    gap: 32px;
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #22D3EE;
+}
+
+/* style hero */
+main section{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main section h1{
+    font-size: 80px;
+}
+
+main section p{
+    font-size: 32px;
+    font-weight: 500;
+}
