@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechGear Store</title>
-    
+
     <!--link css - cdn -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
-    
+
     <header>
         <nav>
+
             <h1>
                 <span class="tech">Tech</span><span class="gear">Gear</span>
             </h1>
+
             <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="ideas.html">Build Ideas</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="product.html">Products</a>
+                </li>
+                <li>
+                    <a href="ideas.html">Build Ideas</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
             </ul>
-            <div class="hamburger-btn"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="nav-right">
+                <div class="hamburger-btn">
+                    <i class="fa-solid fa-bars open"></i>
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
         </nav>
     </header>
 
-    <main>
-        
+    <main class="container-product">
+        <section class="hero-section">
+            <div class="banner"></div>
+
+            <div class="search">
+                <input type="search" placeholder="Cari barang...">
+
+                <div class="category-dropdown">
+                    <p class="category-btn">Kategori <i class="fa-solid fa-chevron-down"></i></p>
+
+                </div>
+            </div>
+        </section>
+        <section class="list-product-section">
+            <h2>Keyboard</h2>
+            <div id="keyboard-list"></div>
+
+            <h2>Mouse</h2>
+            <div id="mouse-list"></div>
+
+            <h2>Monitor</h2>
+            <div id="monitor-list"></div>
+
+            <h2>Meja</h2>
+            <div id="desk-list"></div>
+
+        </section>
+
     </main>
-    
+
+
+
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
