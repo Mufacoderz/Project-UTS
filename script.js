@@ -24,12 +24,14 @@ close.addEventListener('click', handlerHamburger)
 function renderProducts(data, containerId) {
     const container = document.getElementById(containerId);
     container.innerHTML = data.map(item => `
-        <div class="product-card">
-            <img src="${item.cover}" alt="${item.name}">
-            <h3>${item.name}</h3>
-            <p class="price">${item.price}</p>
-            <button class="buy-btn">Beli Sekarang</button>
+    <div class="product-card">
+        <img src="${item.image}" alt="${item.name}" width="150">
+        <h3>${item.name}</h3>
+        <p>Rp ${item.price.toLocaleString('id-ID')}</p>
+        <div>
+            <button class="cart-btn">Add to Cart  <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
+    </div>
     `).join("");
 }
 
