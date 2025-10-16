@@ -46,10 +46,6 @@ nav h1{
     color: #22d3ee;
 }
 
-.tech, .gear{
-    font-family: 'Orbitron', sans-serif; 
-}
-
 .nav-list{
     display: flex;
     gap: 32px;
@@ -163,12 +159,6 @@ main section p{
     color: black;
 }
 
-
-
-
-
-
-
 /* responsif */
 @media (max-width: 768px) {
     .nav-list {
@@ -208,6 +198,14 @@ main section p{
         color: white;
         cursor: pointer;
         font-size: 24px;
+        transition: 0.3s;
+    }
+    .hamburger-btn:hover{
+        color: #22d3ee;
+    }
+
+    .hamburger-btn .close{
+        display: none;
     }
 
     main section h1 {
