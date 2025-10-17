@@ -1,4 +1,4 @@
-// ================== KEYBOARD ==================
+// =============================== KEYBOARD ===========================
 const keyboards = [
     {
         name: "Rexus Legionare MX10",
@@ -28,7 +28,7 @@ const keyboards = [
 ];
 
 
-// ================== MOUSE ==================
+// =========================== MOUSE =============================
 const mouses = [
     {
         name: "Logitech G102 Lightsync",
@@ -58,7 +58,7 @@ const mouses = [
 ];
 
 
-// ================== MONITOR ==================
+// ========================= MONITOR ========================
 const monitors = [
     {
         name: "LG UltraGear 24GN600",
@@ -88,7 +88,7 @@ const monitors = [
 ];
 
 
-// ================== MEJA ==================
+// ========================= MEJA ============================
 const desks = [
     {
         name: "Meja Gaming Eureka Z60",

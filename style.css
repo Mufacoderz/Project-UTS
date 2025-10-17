@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     /* border: 1px solid red; */
 }
 
@@ -88,7 +89,7 @@ nav h1 {
 }
 
 .cart:hover {
-    background-color: white;
+    background-color: #a1e9f4;
     transform: scale(1.2);
 }
 
@@ -96,7 +97,7 @@ nav h1 {
     display: none;
 }
 
-/* ==================================Halaman 1=========================================== */
+/* ==================================HALAMAN 1=========================================== */
 
 /* style hero */
 .container-home .section-hero {
@@ -173,20 +174,20 @@ nav h1 {
     align-items: center;
     text-align: center;
     padding: 100px 10%;
-    height: 100vh;
+    height: auto;
 }
 
-.container-home .section-about h2 {
+.container-home .section-about .about h2 {
     font-size: 2.5rem;
     margin-bottom: 16px;
     position: relative;
 }
 
-.container-home .section-about h2 .gear {
+.container-home .section-about .about h2 .gear {
     color: #22d3ee;
 }
 
-.container-home .section-about h2::after {
+.container-home .section-about .about h2::after {
     content: '';
     display: block;
     width: 60px;
@@ -196,7 +197,7 @@ nav h1 {
     border-radius: 2px;
 }
 
-.container-home .section-about p {
+.container-home .section-about .about p {
     font-size: 1rem;
     line-height: 1.8;
     color: #333;
@@ -204,18 +205,34 @@ nav h1 {
     margin-bottom: 60px;
 }
 
-.about-features {
+.section-features{
+    background: #1A1A1A;
+    padding: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section-features .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
 }
 
-.feature {
+.section-features h2{
+    color: white;
+}
+
+.section-features .features  .feature {
     flex: 1 1 280px;
-    background-color: #f9f9f9;
+    background-color: #2c2c2c;
+    text-align: center;
     padding: 30px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -228,71 +245,28 @@ nav h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.feature i {
+.section-features .features  .feature i {
     font-size: 36px;
     color: #22d3ee;
     margin-bottom: 16px;
 }
 
-.feature h3 {
-    font-size: 1.25rem;
+.section-features .features  .feature h3 {
+    font-size: 22px;
     margin-bottom: 10px;
+    color: white;
 }
 
-.feature p {
-    font-size: 0.95rem;
-    color: #555;
+.section-features .features  .feature p {
+    font-size: 16px;
+    color: #e5e7eb;
 }
 
 
-/* ===========================halaman 2=============================== */
+/* ===========================HALAMAN 2=============================== */
 
 .container-product {
-    background-color: #121212;
-    color: #EDEDED;
-    
-}
-
-.container-product .search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
     background-color: #1A1A1A;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 20px 50px;
-    padding: 16px 24px;
-    flex-wrap: wrap;
-}
-
-.container-product .search input[type="search"] {
-    flex: 1;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: 2px solid #2dd4bf;
-    background-color: #121212;
-    color: #EDEDED;
-    border-radius: 8px;
-    outline: none;
-    transition: all 0.2s ease;
-    min-width: 220px;
-}
-
-.container-product .search input[type="search"]:focus {
-    border-color: #67e8f9;
-    box-shadow: 0 0 0 2px rgba(103, 232, 249, 0.2);
-}
-
-.banner {
-    background: url("img/banner.jpg");
-    width: 100%;
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .banner::after {
@@ -301,6 +275,73 @@ nav h1 {
     inset: 0;
     background: rgba(0, 0, 0, 0.3);
 }
+
+.container-product .search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1A1A1A;
+    padding: 10px 32px;
+}
+
+.container-product .search input[type="search"] {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #22d3ee;
+    background-color: #121212;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+    min-width: 220px;
+}
+
+.container-product .search input[type="search"]:focus {
+    border-color: #a1e9f4;
+    color: #a1e9f4;
+    box-shadow: 0 0 0 2px rgba(103, 232, 249, 0.2);
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.categories a {
+    background-color: #22d3ee;
+    width: 120px;
+    text-align: center;
+    color: #121212;
+    font-weight: 600;
+    border: 1px solid #22d3ee;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.categories a:hover {
+    background-color: #a1e9f4;
+    transform: scale(1.05);
+}
+
+
+.banner {
+    background: url("img/banner3.jpg");
+    width: 100%;
+    height: 30vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 .list-product-section {
     padding: 60px 20px;
@@ -313,7 +354,7 @@ nav h1 {
 
 .list-product-section h2 {
     font-size: 32px;
-    color: #2dd4bf;
+    color: #22d3ee;
     letter-spacing: 1px;
 }
 
@@ -323,12 +364,12 @@ nav h1 {
     justify-content: center;
     gap: 25px;
     width: 100%;
-    border-bottom: 1px solid #2dd4bf;
-    padding-bottom: 20px;
+    border-bottom: 1px solid #22d3ee;
+    padding-bottom: 80px;
 }
 
 .product-card {
-    background: #1A1A1A;
+    background: #2c2c2c;
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     width: 230px;
@@ -352,7 +393,7 @@ nav h1 {
 .product-card h3 {
     font-size: 16px;
     margin: 12px 15px 8px;
-    color: #EDEDED;
+    color: white;
 }
 
 .product-card p {
@@ -376,9 +417,15 @@ nav h1 {
 }
 
 .cart-btn:hover {
-    background: #5eead4;
+    background: #a1e9f4;
     transform: scale(1.05);
 }
+
+.list-product-section a{
+    font-size: 32px;
+    color: #22d3ee;
+}
+
 /* =========================================================== */
 
 /* responsif */
@@ -455,5 +502,14 @@ nav h1 {
 
     .banner {
         height: 40vh;
+    }
+
+    .categories {
+        justify-content: center;
+    }
+
+    .categories button {
+        padding: 8px 14px;
+        font-size: 14px;
     }
 }
