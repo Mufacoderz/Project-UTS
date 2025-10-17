@@ -39,3 +39,6 @@ renderProducts(keyboards, "keyboard-list");
 renderProducts(mouses, "mouse-list");
 renderProducts(monitors, "monitor-list");
 renderProducts(desks, "desk-list");
+renderProducts(headphones, "headphone-list");
+renderProducts(chairs, "chair-list");
+renderProducts(accessories, "accessories-list");

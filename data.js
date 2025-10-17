@@ -7,22 +7,22 @@ const keyboards = [
     },
     {
         name: "Keychron K6 Wireless",
-        image: "img/products/keyboards/keychron-k6.jpg",
+        image: "img/products/keyboards/keychron.webp",
         price: 1250000
     },
     {
         name: "Logitech G213 Prodigy",
-        image: "img/products/keyboards/logitech-g213.jpg",
+        image: "img/products/keyboards/logitech.webp",
         price: 899000
     },
     {
-        name: "Royal Kludge RK61",
-        image: "img/products/keyboards/rk61.jpg",
+        name: "Keyboard Royal Kludge RK61",
+        image: "img/products/keyboards/royal.webp",
         price: 750000
     },
     {
-        name: "Fantech MAXFIT67",
-        image: "img/products/keyboards/maxfit67.jpg",
+        name: "Fantech MAXFIT67 MK858",
+        image: "img/products/keyboards/fantech.webp",
         price: 680000
     }
 ];
@@ -32,27 +32,27 @@ const keyboards = [
 const mouses = [
     {
         name: "Logitech G102 Lightsync",
-        image: "img/products/mouses/g102.jpg",
+        image: "img/products/mouses/logitech.webp",
         price: 250000
     },
     {
         name: "Razer DeathAdder Essential",
-        image: "img/products/mouses/deathadder.jpg",
+        image: "img/products/mouses/razer.webp",
         price: 380000
     },
     {
-        name: "Fantech X9 Thor",
-        image: "img/products/mouses/fantech-x9.jpg",
+        name: "Mouse Fantech X9 Thor",
+        image: "img/products/mouses/fantech.webp",
         price: 210000
     },
     {
-        name: "SteelSeries Rival 3",
-        image: "img/products/mouses/rival3.jpg",
+        name: "Mouse SteelSeries Rival 3",
+        image: "img/products/mouses/rival.webp",
         price: 520000
     },
     {
         name: "Logitech MX Master 3S",
-        image: "img/products/mouses/mx-master-3s.jpg",
+        image: "img/products/mouses/logitechmx.webp",
         price: 1499000
     }
 ];
@@ -62,27 +62,27 @@ const mouses = [
 const monitors = [
     {
         name: "LG UltraGear 24GN600",
-        image: "img/products/monitors/lg-24gn600.jpg",
+        image: "img/products/monitors/lg.webp",
         price: 2100000
     },
     {
         name: "ASUS TUF Gaming VG249Q",
-        image: "img/products/monitors/asus-vg249q.jpg",
+        image: "img/products/monitors/asus.webp",
         price: 2350000
     },
     {
         name: "Samsung Odyssey G3 24”",
-        image: "img/products/monitors/samsung-g3.jpg",
+        image: "img/products/monitors/samsung.webp",
         price: 2450000
     },
     {
-        name: "Acer Nitro VG270",
-        image: "img/products/monitors/acer-vg270.jpg",
+        name: "Acer Nitro VG270 FHD IPS",
+        image: "img/products/monitors/acer.webp",
         price: 2650000
     },
     {
-        name: "BenQ Zowie XL2411K",
-        image: "img/products/monitors/benq-xl2411k.jpg",
+        name: "BenQ Zowie XL2411K 24”",
+        image: "img/products/monitors/benq.webp",
         price: 3100000
     }
 ];
@@ -114,5 +114,94 @@ const desks = [
         name: "Meja Sudut L-Shaped Hitam",
         image: "img/products/desks/l-shaped.jpg",
         price: 1650000
+    }
+];
+
+// ================== KURSI GIMANG ==================
+const chairs = [
+    {
+        name: "Secretlab TITAN Evo 2022",
+        image: "img/products/chairs/secretlab-titan-evo.jpg",
+        price: 7200000
+    },
+    {
+        name: "Rexus Gaming Chair RGC103",
+        image: "img/products/chairs/rexus-rgc103.jpg",
+        price: 1950000
+    },
+    {
+        name: "Fantech GC-181 Ergonomic",
+        image: "img/products/chairs/fantech-gc181.jpg",
+        price: 1650000
+    },
+    {
+        name: "DXRacer Formula Series",
+        image: "img/products/chairs/dxracer-formula.jpg",
+        price: 4500000
+    },
+    {
+        name: "AutoFull Pink Bunny Edition",
+        image: "img/products/chairs/autofull-pink.jpg",
+        price: 5200000
+    }
+];
+
+
+// ================== HEADPHONE / HEADSET ==================
+const headphones = [
+    {
+        name: "Razer BlackShark V2",
+        image: "img/products/headphones/razer-blackshark-v2.jpg",
+        price: 1550000
+    },
+    {
+        name: "Logitech G Pro X",
+        image: "img/products/headphones/logitech-gpro-x.jpg",
+        price: 1850000
+    },
+    {
+        name: "HyperX Cloud II",
+        image: "img/products/headphones/hyperx-cloud2.jpg",
+        price: 1450000
+    },
+    {
+        name: "SteelSeries Arctis 5",
+        image: "img/products/headphones/steelseries-arctis5.jpg",
+        price: 1650000
+    },
+    {
+        name: "Corsair HS80 RGB Wireless",
+        image: "img/products/headphones/corsair-hs80.jpg",
+        price: 2100000
+    }
+];
+
+
+// ================== AKSESORI LAIN ==================
+const accessories = [
+    {
+        name: "Mousepad XXL RGB",
+        image: "img/products/accessories/mousepad-rgb.jpg",
+        price: 250000
+    },
+    {
+        name: "Lampu Meja LED Ambient",
+        image: "img/products/accessories/led-lamp.jpg",
+        price: 180000
+    },
+    {
+        name: "Arm Mic Adjustable",
+        image: "img/products/accessories/mic-arm.jpg",
+        price: 320000
+    },
+    {
+        name: "Webcam Full HD 1080p",
+        image: "img/products/accessories/webcam-1080p.jpg",
+        price: 490000
+    },
+    {
+        name: "USB Hub 7 Port RGB",
+        image: "img/products/accessories/usb-hub-rgb.jpg",
+        price: 230000
     }
 ];
