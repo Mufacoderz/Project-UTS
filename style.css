@@ -422,9 +422,24 @@ nav h1 {
 }
 
 .list-product-section a{
-    font-size: 32px;
+    font-size: 28px;
     color: #22d3ee;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 100%;
 }
+
+.list-product-section a:hover{
+    transform: translateY(-15px);
+    color: #a1e9f4;
+    border: 1px solid #a1e9f4;
+
+}
+
+#keyboard-list, #mouse-list, #monitor-list, #headphone-list, #desk-list, #chair-list, #accessories-list {
+    scroll-margin-top: 210px;
+}
+
 
 /* =========================================================== */
 
