@@ -1,6 +1,9 @@
 const nav = document.querySelector('.nav-list')
 const open = document.querySelector('.open');
 const close = document.querySelector('.close')
+const category = document.querySelector('.categories')
+const openCategory = document.querySelector('.icon-category')
+const closeCategory = document.querySelectorAll('.list-category')
 
 
 //fungsi utk bar nav mobile
@@ -17,6 +20,27 @@ function handlerHamburger() {
 
 open.addEventListener('click', handlerHamburger)
 close.addEventListener('click', handlerHamburger)
+
+
+//fungsi utk bar kategori mobile
+function handlerCategory() {
+    category.classList.toggle('active')
+    if (nav.classList.contains('active')) {
+        openCategory.style.display = 'none'
+    } else {
+        openCategory.style.display = 'block'
+    }
+}
+
+closeCategory.forEach(e =>{
+    e.addEventListener('click', ()=>{
+        category.classList.remove('active')
+        openCategory.display='block'
+    })
+})
+
+openCategory.addEventListener('click', handlerCategory)
+
 
 
 //fungsi utk render data json produks

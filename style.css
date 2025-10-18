@@ -28,12 +28,12 @@ nav {
     left: 5%;
     width: 90%;
     padding: 12px 32px;
-    backdrop-filter: blur(12px);
     z-index: 5;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 12px;
+    backdrop-filter: blur(12px);
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -87,6 +87,7 @@ nav h1 {
     padding: 10px;
     border-radius: 50%;
     transition: 0.3s;
+    color: white;
 }
 
 .cart:hover {
@@ -206,7 +207,7 @@ nav h1 {
     margin-bottom: 60px;
 }
 
-.section-features{
+.section-features {
     background: #1A1A1A;
     padding: 100px;
     display: flex;
@@ -227,11 +228,11 @@ nav h1 {
     max-width: 1000px;
 }
 
-.section-features h2{
+.section-features h2 {
     color: white;
 }
 
-.section-features .features  .feature {
+.section-features .features .feature {
     flex: 1 1 280px;
     background-color: #2c2c2c;
     text-align: center;
@@ -247,19 +248,19 @@ nav h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.section-features .features  .feature i {
+.section-features .features .feature i {
     font-size: 36px;
     color: #22d3ee;
     margin-bottom: 16px;
 }
 
-.section-features .features  .feature h3 {
+.section-features .features .feature h3 {
     font-size: 22px;
     margin-bottom: 10px;
     color: white;
 }
 
-.section-features .features  .feature p {
+.section-features .features .feature p {
     font-size: 16px;
     color: #e5e7eb;
 }
@@ -332,6 +333,10 @@ nav h1 {
     transform: scale(1.05);
 }
 
+.icon-category {
+    display: none;
+}
+
 
 .banner {
     background: url("img/banner3.webp");
@@ -342,6 +347,12 @@ nav h1 {
     background-size: cover;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bestseller-section {
+    width: 100%;
+    background-color: #fff;
+    height: 450px;
 }
 
 
@@ -396,7 +407,8 @@ nav h1 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     transition: 1.05s;
 }
-.product-card:hover img{
+
+.product-card:hover img {
     transform: scale(1.1);
 }
 
@@ -435,7 +447,7 @@ nav h1 {
     transform: scale(1.05);
 }
 
-.list-product-section a{
+.list-product-section a {
     font-size: 28px;
     color: #22d3ee;
     transition: 0.3s;
@@ -444,14 +456,20 @@ nav h1 {
     border: 1px solid #22d3ee;
 }
 
-.list-product-section a:hover{
+.list-product-section a:hover {
     transform: translateY(-15px);
     color: #a1e9f4;
     border: 1px solid #a1e9f4;
 
 }
 
-#keyboard-list, #mouse-list, #monitor-list, #headphone-list, #desk-list, #chair-list, #accessories-list {
+#keyboard-list,
+#mouse-list,
+#monitor-list,
+#headphone-list,
+#desk-list,
+#chair-list,
+#accessories-list {
     scroll-margin-top: 210px;
 }
 
@@ -529,73 +547,132 @@ nav h1 {
         width: 50%;
         margin: 0 auto;
     }
-    .section-features{
+
+    .section-features {
         gap: 50px;
         padding: 50px;
     }
-    .section-features .features{
+
+    .section-features .features {
         gap: 15px;
     }
-    .section-features .features .feature{
+
+    .section-features .features .feature {
         height: 150px;
         width: 150px;
 
     }
-    .section-features .features .feature i{
+
+    .section-features .features .feature i {
         font-size: 24px;
     }
-    .section-features .features .feature h3{
+
+    .section-features .features .feature h3 {
         font-size: 16px;
     }
-    .section-features .features .feature p{
+
+    .section-features .features .feature p {
         font-size: 8px;
     }
 
     /* =====================HALAMAN 2 */
 
     .banner {
-        height: 40vh;
+        height: 25vh;
     }
 
-    .categories {
-        justify-content: center;
+    .container-product .search {
+        gap: 10px;
     }
 
-    .categories button {
-        padding: 8px 14px;
+    .categories{
+        display: none;
+    }
+
+    .categories.active {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 250px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        backdrop-filter: blur(12px);
+        background: rgba(0, 0, 0, 0.7);
+        gap: 4px;
+    }
+
+    .categories a {
+        background: transparent;
+        border: none;
+        color: white;
         font-size: 14px;
+        padding: 5px 9px;
     }
 
-    .list-product-section{
+    .categories a:hover{
+        background-color: transparent;
+        text-decoration: underline;
+        color: #22d3ee;
+    }
+
+    .icon-category {
+        display: block;
+        background-color: #22d3ee;
+        color: white;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 24px;
+        transition: 1.03s;
+    }
+
+    .icon-category i {
+        transition: 1.03s;
+    }
+
+    .icon-category:hover i {
+        transform: scale(1.2);
+    }
+
+    .icon-category:hover {
+        background-color: #67e8f9;
+        cursor: pointer;
+    }
+
+    .list-product-section {
         padding: 20px 10px;
         gap: 20px;
     }
 
-    .list-product-section h2{
+    .list-product-section h2 {
         font-size: 16px;
     }
 
-    .list-product-section div[id$="-list"]{
+    .list-product-section div[id$="-list"] {
         gap: 10px;
         padding-bottom: 40px;
     }
 
-    .product-card{
+    .product-card {
         width: 30%;
     }
-    .product-card img{
+
+    .product-card img {
         height: 100px;
     }
-    .product-card h3{
+
+    .product-card h3 {
         font-size: 10px;
         margin-bottom: 4px;
     }
-    .product-card p{
+
+    .product-card p {
         font-size: 8px;
         min-height: 8px;
         margin-bottom: 5px;
     }
-    .product-card .cart-btn{
+
+    .product-card .cart-btn {
         font-size: 10px;
         padding: 5px 8px;
     }
