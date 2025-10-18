@@ -6,6 +6,13 @@
     /* border: 1px solid red; */
 }
 
+:root{
+    --color-primary: #22d3ee;
+    --color-primary-hover: #a1e9f4;
+    --color-secondary: #2c2c2c;
+    --color-tertiary: #1A1A1A;
+}
+
 h1,
 h2,
 h3 {
@@ -51,7 +58,7 @@ nav h1 {
 }
 
 .gear {
-    color: #22d3ee;
+    color: var(--color-primary);
 }
 
 .nav-list {
@@ -70,7 +77,7 @@ nav h1 {
 }
 
 .nav-list a:hover {
-    color: #22d3ee;
+    color: var(--color-primary);
     text-decoration: underline;
 }
 
@@ -83,7 +90,7 @@ nav h1 {
 .cart {
 
     font-size: 20px;
-    background-color: #22d3ee;
+    background-color: var(--color-primary);
     padding: 10px;
     border-radius: 50%;
     transition: 0.3s;
@@ -91,7 +98,7 @@ nav h1 {
 }
 
 .cart:hover {
-    background-color: #a1e9f4;
+    background-color: var(--color-primary-hover);
     transform: scale(1.1);
     cursor:pointer;
 }
@@ -134,7 +141,6 @@ nav h1 {
     display: flex;
     justify-content: center;
     gap: 24px;
-    animation: fadeInUp 1s ease forwards;
 }
 
 .btn {
@@ -150,22 +156,22 @@ nav h1 {
 }
 
 .btn-primary {
-    background-color: #22d3ee;
+    background-color: var(--color-primary);
     color: black;
 }
 
 .btn-primary:hover {
-    background-color: #a1e9f4;
+    background-color: var(--color-primary-hover);
     color: black;
 }
 
 .btn-outline {
-    border: 2px solid #22d3ee;
-    color: #22d3ee;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
 }
 
 .btn-outline:hover {
-    background-color: #22d3ee;
+    background-color: var(--color-primary);
     color: black;
 }
 
@@ -187,7 +193,7 @@ nav h1 {
 }
 
 .container-home .section-about .about h2 .gear {
-    color: #22d3ee;
+    color: var(--color-primary);
 }
 
 .container-home .section-about .about h2::after {
@@ -195,7 +201,7 @@ nav h1 {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #22d3ee;
+    background-color: var(--color-primary);
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -209,7 +215,7 @@ nav h1 {
 }
 
 .section-features {
-    background: #1A1A1A;
+    background: var(--color-tertiary);
     padding: 100px;
     display: flex;
     justify-content: center;
@@ -236,7 +242,7 @@ nav h1 {
 
 .section-features .features .feature {
     flex: 1 1 280px;
-    background-color: #2c2c2c;
+    background-color: var(--color-secondary);
     text-align: center;
     padding: 30px 20px;
     border-radius: 12px;
@@ -252,7 +258,7 @@ nav h1 {
 
 .section-features .features .feature i {
     font-size: 36px;
-    color: #22d3ee;
+    color: var(--color-primary);
     margin-bottom: 16px;
 }
 
@@ -271,7 +277,7 @@ nav h1 {
 /* ===========================HALAMAN 2=============================== */
 
 .container-product {
-    background-color: #1A1A1A;
+    background-color: var(--color-tertiary);
 }
 
 .banner::after {
@@ -287,7 +293,7 @@ nav h1 {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #1A1A1A;
+    background-color: var(--color-tertiary);
     padding: 10px 32px;
 }
 
@@ -295,7 +301,7 @@ nav h1 {
     flex: 1;
     padding: 12px 16px;
     font-size: 16px;
-    border: 2px solid #22d3ee;
+    border: 2px solid var(--color-primary);
     background-color: #121212;
     border-radius: 8px;
     outline: none;
@@ -304,8 +310,8 @@ nav h1 {
 }
 
 .container-product .search input[type="search"]:focus {
-    border-color: #a1e9f4;
-    color: #a1e9f4;
+    border-color: var(--color-primary-hover);
+    color: var(--color-primary-hover);
     box-shadow: 0 0 0 2px rgba(103, 232, 249, 0.2);
 }
 
@@ -317,12 +323,12 @@ nav h1 {
 }
 
 .categories a {
-    background-color: #22d3ee;
+    background-color: var(--color-primary);
     width: 120px;
     text-align: center;
     color: #121212;
     font-weight: 500;
-    border: 1px solid #22d3ee;
+    border: 1px solid var(--color-primary);
     padding: 10px 18px;
     border-radius: 8px;
     cursor: pointer;
@@ -331,7 +337,7 @@ nav h1 {
 }
 
 .categories a:hover {
-    background-color: #a1e9f4;
+    background-color: var(--color-primary-hover);
     transform: scale(1.05);
 }
 
@@ -362,7 +368,7 @@ nav h1 {
 
 .list-product-section h2 {
     font-size: 32px;
-    color: #22d3ee;
+    color: var(--color-primary);
     letter-spacing: 1px;
 }
 
@@ -372,12 +378,12 @@ nav h1 {
     justify-content: center;
     gap: 25px;
     width: 100%;
-    border-bottom: 1px solid #22d3ee;
+    border-bottom: 1px solid var(--color-primary);
     padding-bottom: 80px;
 }
 
 .product-card {
-    background: #2c2c2c;
+    background: var(--color-secondary);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     width: 230px;
@@ -422,7 +428,7 @@ nav h1 {
 }
 
 .cart-btn {
-    background: #22d3ee;
+    background: var(--color-primary);
     color: #121212;
     padding: 10px 16px;
     border: none;
@@ -438,23 +444,23 @@ nav h1 {
 
 
 .cart-btn:hover {
-    background: #a1e9f4;
+    background: var(--color-primary-hover);
     transform: scale(1.05);
 }
 
 .list-product-section a {
     font-size: 28px;
-    color: #22d3ee;
+    color: var(--color-primary);
     transition: 0.3s;
     padding: 10px;
     border-radius: 100%;
-    border: 1px solid #22d3ee;
+    border: 1px solid var(--color-primary);
 }
 
 .list-product-section a:hover {
     transform: translateY(-15px);
-    color: #a1e9f4;
-    border: 1px solid #a1e9f4;
+    color: var(--color-primary-hover);
+    border: 1px solid var(--color-primary-hover);
 
 }
 
@@ -503,7 +509,7 @@ nav h1 {
     }
 
     .nav-list li a:hover {
-        color: #22d3ee;
+        color: var(--color-primary);
     }
 
     .hamburger-btn {
@@ -515,7 +521,7 @@ nav h1 {
     }
 
     .hamburger-btn:hover {
-        color: #22d3ee;
+        color: var(--color-primary);
     }
 
     .hamburger-btn .close {
@@ -615,12 +621,12 @@ nav h1 {
     .categories a:hover{
         background-color: transparent;
         text-decoration: underline;
-        color: #22d3ee;
+        color: var(--color-primary);
     }
 
     .icon-category {
         display: block;
-        background-color: #22d3ee;
+        background-color: var(--color-primary);
         color: white;
         padding: 8px;
         border-radius: 4px;
