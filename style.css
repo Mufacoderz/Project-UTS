@@ -217,6 +217,7 @@ nav h1 {
     flex-direction: column;
     gap: 50px;
     height: 100vh;
+    text-align: center;
 }
 
 .section-features .features {
@@ -349,13 +350,6 @@ nav h1 {
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-.bestseller-section {
-    width: 100%;
-    background-color: #fff;
-    height: 450px;
-}
-
 
 .list-product-section {
     padding: 60px 20px;
@@ -579,7 +573,7 @@ nav h1 {
     /* =====================HALAMAN 2 */
 
     .banner {
-        height: 35vh;
+        height: 20vh;
     }
 
     .container-product .search input[type="search"]{
@@ -599,7 +593,7 @@ nav h1 {
         display: block;
         position: absolute;
         right: 20px;
-        top: 310px;
+        top: 200px;
         width: 100px;
         display: flex;
         flex-direction: column;
