@@ -92,27 +92,27 @@ const monitors = [
 const desks = [
     {
         name: "Meja Gaming Eureka Z60",
-        image: "img/products/desks/eureka-z60.jpg",
+        image: "img/products/desks/eureka.webp",
         price: 2900000
     },
     {
         name: "Meja Minimalis Kayu Jati",
-        image: "img/products/desks/jati.jpg",
+        image: "img/products/desks/meja.webp",
         price: 850000
     },
     {
-        name: "Meja Setup LED RGB",
-        image: "img/products/desks/rgb-setup.jpg",
+        name: "AOR Meja Gaming RGB",
+        image: "img/products/desks/aor.webp",
         price: 1750000
     },
     {
-        name: "Meja Lipat Aluminium Portable",
-        image: "img/products/desks/lipat-aluminium.jpg",
+        name: "Oxihom F1301120HM Meja Gaming",
+        image: "img/products/desks/oxihom.webp",
         price: 480000
     },
     {
-        name: "Meja Sudut L-Shaped Hitam",
-        image: "img/products/desks/l-shaped.jpg",
+        name: "Informa Kardel Meja Gaming",
+        image: "img/products/desks/informa.webp",
         price: 1650000
     }
 ];
@@ -121,27 +121,27 @@ const desks = [
 const chairs = [
     {
         name: "Secretlab TITAN Evo 2022",
-        image: "img/products/chairs/secretlab-titan-evo.jpg",
+        image: "img/products/chairs/secrettlab.webp",
         price: 7200000
     },
     {
         name: "Rexus Gaming Chair RGC103",
-        image: "img/products/chairs/rexus-rgc103.jpg",
+        image: "img/products/chairs/rexus.webp",
         price: 1950000
     },
     {
         name: "Fantech GC-181 Ergonomic",
-        image: "img/products/chairs/fantech-gc181.jpg",
+        image: "img/products/chairs/fantech.webp",
         price: 1650000
     },
     {
         name: "DXRacer Formula Series",
-        image: "img/products/chairs/dxracer-formula.jpg",
+        image: "img/products/chairs/dxracer.webp",
         price: 4500000
     },
     {
         name: "AutoFull Pink Bunny Edition",
-        image: "img/products/chairs/autofull-pink.jpg",
+        image: "img/products/chairs/autofull.webp",
         price: 5200000
     }
 ];
@@ -151,27 +151,27 @@ const chairs = [
 const headphones = [
     {
         name: "Razer BlackShark V2",
-        image: "img/products/headphones/razer-blackshark-v2.jpg",
+        image: "img/products/headphones/razer.webp",
         price: 1550000
     },
     {
         name: "Logitech G Pro X",
-        image: "img/products/headphones/logitech-gpro-x.jpg",
+        image: "img/products/headphones/logitech.webp",
         price: 1850000
     },
     {
         name: "HyperX Cloud II",
-        image: "img/products/headphones/hyperx-cloud2.jpg",
+        image: "img/products/headphones/hyper.webp",
         price: 1450000
     },
     {
         name: "SteelSeries Arctis 5",
-        image: "img/products/headphones/steelseries-arctis5.jpg",
+        image: "img/products/headphones/steel.webp",
         price: 1650000
     },
     {
-        name: "Corsair HS80 RGB Wireless",
-        image: "img/products/headphones/corsair-hs80.jpg",
+        name: "Corsair HS80 RGB",
+        image: "img/products/headphones/corsair.webp",
         price: 2100000
     }
 ];

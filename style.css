@@ -20,7 +20,7 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-/* style navbar */
+/* ==============================NAVBAR================================================= */
 
 nav {
     position: fixed;
@@ -37,6 +37,7 @@ nav {
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 nav h1 {
     font-size: 24px;
@@ -213,6 +214,7 @@ nav h1 {
     align-items: center;
     flex-direction: column;
     gap: 50px;
+    height: 100vh;
 }
 
 .section-features .features {
@@ -441,9 +443,9 @@ nav h1 {
 }
 
 
-/* =========================================================== */
+/* ==========================RESPONSIF================================= */
 
-/* responsif */
+
 @media (max-width: 768px) {
 
     .nav-list {
