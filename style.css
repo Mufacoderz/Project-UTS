@@ -525,6 +525,29 @@ nav h1 {
         width: 50%;
         margin: 0 auto;
     }
+    .section-features{
+        gap: 50px;
+        padding: 50px;
+    }
+    .section-features .features{
+        gap: 15px;
+    }
+    .section-features .features .feature{
+        height: 150px;
+        width: 150px;
+
+    }
+    .section-features .features .feature i{
+        font-size: 24px;
+    }
+    .section-features .features .feature h3{
+        font-size: 16px;
+    }
+    .section-features .features .feature p{
+        font-size: 8px;
+    }
+
+    /* =====================HALAMAN 2 */
 
     .banner {
         height: 40vh;
@@ -552,7 +575,7 @@ nav h1 {
         gap: 10px;
         padding-bottom: 40px;
     }
-    
+
     .product-card{
         width: 30%;
     }
