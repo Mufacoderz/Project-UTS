@@ -91,7 +91,7 @@ nav h1 {
 
 .cart:hover {
     background-color: #a1e9f4;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .hamburger-btn {
@@ -378,7 +378,11 @@ nav h1 {
     text-align: center;
     transition: all 0.3s ease;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .product-card:hover {
     transform: translateY(-5px);
@@ -396,12 +400,14 @@ nav h1 {
     font-size: 16px;
     margin: 12px 15px 8px;
     color: white;
+    min-height: 40px;
 }
 
 .product-card p {
     font-size: 14px;
     color: #67e8f9;
     margin-bottom: 15px;
+    min-height: 22px;
 }
 
 .cart-btn {
@@ -414,9 +420,11 @@ nav h1 {
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
+    margin-top: auto;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 
 .cart-btn:hover {
     background: #a1e9f4;
@@ -429,6 +437,7 @@ nav h1 {
     transition: 0.3s;
     padding: 10px;
     border-radius: 100%;
+    border: 1px solid #22d3ee;
 }
 
 .list-product-section a:hover{
@@ -528,5 +537,39 @@ nav h1 {
     .categories button {
         padding: 8px 14px;
         font-size: 14px;
+    }
+
+    .list-product-section{
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .list-product-section h2{
+        font-size: 16px;
+    }
+
+    .list-product-section div[id$="-list"]{
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+    
+    .product-card{
+        width: 30%;
+    }
+    .product-card img{
+        height: 100px;
+    }
+    .product-card h3{
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .product-card p{
+        font-size: 8px;
+        min-height: 8px;
+        margin-bottom: 5px;
+    }
+    .product-card .cart-btn{
+        font-size: 10px;
+        padding: 5px 8px;
     }
 }

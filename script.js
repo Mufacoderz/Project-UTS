@@ -15,7 +15,6 @@ function handlerHamburger() {
     }
 }
 
-//event listener utk bar nav mobile
 open.addEventListener('click', handlerHamburger)
 close.addEventListener('click', handlerHamburger)
 
