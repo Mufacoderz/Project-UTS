@@ -181,27 +181,27 @@ const headphones = [
 const accessories = [
     {
         name: "Mousepad XXL RGB",
-        image: "img/products/accessories/mousepad-rgb.jpg",
+        image: "img/products/others/mousepad.webp",
         price: 250000
     },
     {
         name: "Lampu Meja LED Ambient",
-        image: "img/products/accessories/led-lamp.jpg",
+        image: "img/products/others/lampu.webp",
         price: 180000
     },
     {
         name: "Arm Mic Adjustable",
-        image: "img/products/accessories/mic-arm.jpg",
+        image: "img/products/others/arm.webp",
         price: 320000
     },
     {
         name: "Webcam Full HD 1080p",
-        image: "img/products/accessories/webcam-1080p.jpg",
+        image: "img/products/others/webcam.webp",
         price: 490000
     },
     {
         name: "USB Hub 7 Port RGB",
-        image: "img/products/accessories/usb-hub-rgb.jpg",
+        image: "img/products/others/usb.webp",
         price: 230000
     }
 ];
