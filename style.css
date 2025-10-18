@@ -93,6 +93,7 @@ nav h1 {
 .cart:hover {
     background-color: #a1e9f4;
     transform: scale(1.1);
+    cursor:pointer;
 }
 
 .hamburger-btn {
@@ -578,7 +579,12 @@ nav h1 {
     /* =====================HALAMAN 2 */
 
     .banner {
-        height: 25vh;
+        height: 40vh;
+    }
+
+    .container-product .search input[type="search"]{
+        font-size: 10px;
+        padding: 10px;
     }
 
     .container-product .search {
@@ -622,7 +628,7 @@ nav h1 {
         color: white;
         padding: 8px;
         border-radius: 4px;
-        font-size: 24px;
+        font-size: 14px;
         transition: 1.03s;
     }
 
