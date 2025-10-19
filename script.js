@@ -22,41 +22,43 @@ close.addEventListener('click', handlerHamburger)
 
 // SCRIPT UTK PRODUCT.HTML
 
-AOS.init();
+if (window.location.pathname.endsWith("product.html")) {
 
-const category = document.querySelector('.categories')
-const openCategory = document.querySelector('.openCategory')
-const closeCategory = document.querySelector('.closeCategory')
-const closeCategoryA = document.querySelectorAll('.list-category')
+    AOS.init();
 
-//fungsi utk bar kategori mobile
-function handlerCategory() {
-    category.classList.toggle('active')
-    if (category.classList.contains('active')) {
-        openCategory.style.display = 'none'
-        closeCategory.style.display= 'block'
-    }else{
-        openCategory.style.display = 'block'
-        closeCategory.style.display= 'none'
+    const category = document.querySelector('.categories')
+    const openCategory = document.querySelector('.openCategory')
+    const closeCategory = document.querySelector('.closeCategory')
+    const closeCategoryA = document.querySelectorAll('.list-category')
+
+    //fungsi utk bar kategori mobile
+    function handlerCategory() {
+        category.classList.toggle('active')
+        if (category.classList.contains('active')) {
+            openCategory.style.display = 'none'
+            closeCategory.style.display = 'block'
+        } else {
+            openCategory.style.display = 'block'
+            closeCategory.style.display = 'none'
+        }
     }
-}
 
-closeCategoryA.forEach(e =>{
-    e.addEventListener('click', ()=>{
-        category.classList.remove('active')
-        openCategory.display='block'
+    closeCategoryA.forEach(e => {
+        e.addEventListener('click', () => {
+            category.classList.remove('active')
+            openCategory.display = 'block'
+        })
     })
-})
 
-openCategory.addEventListener('click', handlerCategory)
-closeCategory.addEventListener('click', handlerCategory)
-
+    openCategory.addEventListener('click', handlerCategory)
+    closeCategory.addEventListener('click', handlerCategory)
 
 
-//fungsi utk render data json produks
-function renderProducts(data, containerId) {
-    const container = document.getElementById(containerId);
-    container.innerHTML = data.map(item => `
+
+    //fungsi utk render data json produks
+    function renderProducts(data, containerId) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = data.map(item => `
     <div class="product-card"  data-aos="fade-up">
         <img src="${item.image}" alt="${item.name}" width="150">
         <h3>${item.name}</h3>
@@ -66,12 +68,16 @@ function renderProducts(data, containerId) {
         </div>
     </div>
     `).join("");
+    }
+
+    renderProducts(keyboards, "keyboard-list");
+    renderProducts(mouses, "mouse-list");
+    renderProducts(monitors, "monitor-list");
+    renderProducts(desks, "desk-list");
+    renderProducts(headphones, "headphone-list");
+    renderProducts(chairs, "chair-list");
+    renderProducts(accessories, "accessories-list");
+
+
 }
 
-renderProducts(keyboards, "keyboard-list");
-renderProducts(mouses, "mouse-list");
-renderProducts(monitors, "monitor-list");
-renderProducts(desks, "desk-list");
-renderProducts(headphones, "headphone-list");
-renderProducts(chairs, "chair-list");
-renderProducts(accessories, "accessories-list");
