@@ -1,14 +1,8 @@
-
-AOS.init();
+// SCRIPT GLOBAL
 
 const nav = document.querySelector('.nav-list')
 const open = document.querySelector('.open');
 const close = document.querySelector('.close')
-const category = document.querySelector('.categories')
-const openCategory = document.querySelector('.openCategory')
-const closeCategory = document.querySelector('.closeCategory')
-const closeCategoryA = document.querySelectorAll('.list-category')
-
 
 //fungsi utk bar nav mobile
 function handlerHamburger() {
@@ -25,6 +19,15 @@ function handlerHamburger() {
 open.addEventListener('click', handlerHamburger)
 close.addEventListener('click', handlerHamburger)
 
+
+// SCRIPT UTK PRODUCT.HTML
+
+AOS.init();
+
+const category = document.querySelector('.categories')
+const openCategory = document.querySelector('.openCategory')
+const closeCategory = document.querySelector('.closeCategory')
+const closeCategoryA = document.querySelectorAll('.list-category')
 
 //fungsi utk bar kategori mobile
 function handlerCategory() {
