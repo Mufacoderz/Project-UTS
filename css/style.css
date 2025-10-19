@@ -609,6 +609,10 @@ nav h1 {
         margin: 0 auto;
     }
 
+    .container-home .section-about .about h2{
+        font-size: 25px
+    }
+
     .section-features {
         gap: 50px;
         padding: 50px;
@@ -753,5 +757,13 @@ nav h1 {
     .product-card .cart-btn {
         font-size: 10px;
         padding: 5px 8px;
+    }
+
+    /* ===============================HALAMAN 3=================== */
+    .container-ideas .section-ideas{
+        padding-top: 70px;
+    }
+    .container-ideas .section-ideas h2{
+        font-size: 25px;
     }
 }
