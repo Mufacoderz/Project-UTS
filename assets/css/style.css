@@ -118,7 +118,7 @@ nav h1 {
     justify-content: center;
     text-align: center;
     width: 100%;
-    background: url(img/hero.webp);
+    background: url(/assets/img/hero.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -346,7 +346,7 @@ nav h1 {
 
 
 .banner {
-    background: url("img/banner.webp");
+    background: url("/assets/img/banner.webp");
     width: 100%;
     height: 30vh;
     background-position: top;
