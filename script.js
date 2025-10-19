@@ -1,3 +1,6 @@
+
+AOS.init();
+
 const nav = document.querySelector('.nav-list')
 const open = document.querySelector('.open');
 const close = document.querySelector('.close')
@@ -51,7 +54,7 @@ closeCategory.addEventListener('click', handlerCategory)
 function renderProducts(data, containerId) {
     const container = document.getElementById(containerId);
     container.innerHTML = data.map(item => `
-    <div class="product-card">
+    <div class="product-card"  data-aos="fade-up">
         <img src="${item.image}" alt="${item.name}" width="150">
         <h3>${item.name}</h3>
         <p>Rp ${item.price.toLocaleString('id-ID')}</p>
