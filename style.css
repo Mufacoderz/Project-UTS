@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 :root{
@@ -479,6 +479,15 @@ nav h1 {
 
 @media (max-width: 768px) {
 
+    nav{
+        padding: 6px 16px;
+    }
+
+    nav h1{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
     .nav-list {
         display: none;
     }
@@ -511,11 +520,15 @@ nav h1 {
         color: var(--color-primary);
     }
 
+    .nav-right{
+        gap: 5px;
+    }
+
     .hamburger-btn {
         display: flex;
         color: white;
         cursor: pointer;
-        font-size: 24px;
+        font-size: 20px;
         transition: 0.3s;
     }
 
@@ -525,6 +538,11 @@ nav h1 {
 
     .hamburger-btn .close {
         display: none;
+    }
+
+    .cart{
+        font-size: 10px;
+        padding: 8px;
     }
 
     /* ==================HALAMAN 1============================== */
