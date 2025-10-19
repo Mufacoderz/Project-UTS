@@ -152,7 +152,7 @@ nav h1 {
     align-items: center;
     justify-content: center;
     height: 48px;
-    transition: all 0.1s ease;
+    transition: 0.2s;
 }
 
 .btn-primary {
@@ -247,7 +247,7 @@ nav h1 {
     padding: 30px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    transition: 0.3s;
     height: 250px;
 }
 
@@ -300,12 +300,11 @@ nav h1 {
 .container-product .search input[type="search"] {
     flex: 1;
     padding: 12px 16px;
-    font-size: 16px;
     border: 2px solid var(--color-primary);
-    background-color: #121212;
+    background-color: var(--color-secondary);
     border-radius: 8px;
     outline: none;
-    transition: all 0.2s ease;
+    transition: 0.2s;
     min-width: 220px;
 }
 
@@ -388,7 +387,7 @@ nav h1 {
     border-radius: 15px;
     width: 230px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: 0.3s;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -435,7 +434,7 @@ nav h1 {
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s;
     width: 100%;
     margin-top: auto;
     border-bottom-left-radius: 15px;
@@ -505,7 +504,7 @@ nav h1 {
         font-size: 18px;
         text-decoration: none;
         padding: 8px 0;
-        transition: color 0.2s;
+        transition: 0.2s;
     }
 
     .nav-list li a:hover {
@@ -527,6 +526,8 @@ nav h1 {
     .hamburger-btn .close {
         display: none;
     }
+
+    /* ==================HALAMAN 1============================== */
 
     .container-home .section-hero h1 {
         font-size: 30px;
@@ -576,7 +577,7 @@ nav h1 {
         font-size: 8px;
     }
 
-    /* =====================HALAMAN 2 */
+    /* =====================HALAMAN 2  =============================*/
 
     .banner {
         height: 20vh;
@@ -607,6 +608,7 @@ nav h1 {
         backdrop-filter: blur(12px);
         background: rgba(0, 0, 0, 0.7);
         gap: 4px;
+        z-index: 9;
     }
 
     .categories a {

@@ -25,9 +25,7 @@ close.addEventListener('click', handlerHamburger)
 //fungsi utk bar kategori mobile
 function handlerCategory() {
     category.classList.toggle('active')
-    if (nav.classList.contains('active')) {
-        openCategory.style.display = 'none'
-    } else {
+    if (category.classList.contains('active')) {
         openCategory.style.display = 'block'
     }
 }
