@@ -2,8 +2,9 @@ const nav = document.querySelector('.nav-list')
 const open = document.querySelector('.open');
 const close = document.querySelector('.close')
 const category = document.querySelector('.categories')
-const openCategory = document.querySelector('.icon-category')
-const closeCategory = document.querySelectorAll('.list-category')
+const openCategory = document.querySelector('.openCategory')
+const closeCategory = document.querySelector('.closeCategory')
+const closeCategoryA = document.querySelectorAll('.list-category')
 
 
 //fungsi utk bar nav mobile
@@ -26,11 +27,15 @@ close.addEventListener('click', handlerHamburger)
 function handlerCategory() {
     category.classList.toggle('active')
     if (category.classList.contains('active')) {
+        openCategory.style.display = 'none'
+        closeCategory.style.display= 'block'
+    }else{
         openCategory.style.display = 'block'
+        closeCategory.style.display= 'none'
     }
 }
 
-closeCategory.forEach(e =>{
+closeCategoryA.forEach(e =>{
     e.addEventListener('click', ()=>{
         category.classList.remove('active')
         openCategory.display='block'
@@ -38,6 +43,7 @@ closeCategory.forEach(e =>{
 })
 
 openCategory.addEventListener('click', handlerCategory)
+closeCategory.addEventListener('click', handlerCategory)
 
 
 
@@ -50,7 +56,7 @@ function renderProducts(data, containerId) {
         <h3>${item.name}</h3>
         <p>Rp ${item.price.toLocaleString('id-ID')}</p>
         <div>
-            <button class="cart-btn">Add to Cart  <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="cart-btn">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
     </div>
     `).join("");

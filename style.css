@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 :root{
@@ -541,7 +541,7 @@ nav h1 {
     }
 
     .cart{
-        font-size: 10px;
+        font-size:15px;
         padding: 8px;
     }
 
@@ -608,6 +608,7 @@ nav h1 {
 
     .container-product .search {
         gap: 10px;
+        padding: 5px 16px;
     }
 
     .categories{
@@ -648,14 +649,22 @@ nav h1 {
         display: block;
         background-color: var(--color-primary);
         color: white;
-        padding: 8px;
+        padding: 0;
         border-radius: 4px;
         font-size: 14px;
         transition: 1.03s;
     }
 
+    .icon-category .closeCategory{
+        display: none;
+    }
+
     .icon-category i {
         transition: 1.03s;
+        font-size: 20px;
+        padding: 4px;
+        width: 30px;
+        height: 30px;
     }
 
     .icon-category:hover i {
