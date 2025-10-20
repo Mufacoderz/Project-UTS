@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* border: 1px solid red;` */
+    /* border: 1px solid red; */
 }
 
 :root{
@@ -508,7 +508,7 @@ nav h1 {
     flex-direction: column;
 }
 
-.container-ideas .section-ideas .ideas-list .ideas-card{
+.section-ideas .ideas-list .ideas-card{
     background: var(--color-secondary);
     width: 100%;
     height: 60vh;
@@ -592,8 +592,75 @@ nav h1 {
     background: var(--color-primary);
     border-radius: 20px;
 }
-.section-contact .form{
+.section-contact form{
     width: 50%;
+}
+
+.section-contact .get-in-touch{
+    padding: 100px 50px;
+}
+
+.section-contact .get-in-touch h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.section-contact .get-in-touch p{
+    margin-bottom: 40px;
+}
+.section-contact .get-in-touch .social-media p{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.section-contact form{
+    padding: 90px 50px;
+}
+
+.section-contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-contact form input{
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.section-contact form textarea{
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.section-contact form input,
+.section-contact form textarea {
+    border: 2px solid transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.section-contact form input:focus, form textarea:focus{
+    border-color: var(--color-primary);
+    color: var(--color-primary-hover);
+}
+
+.section-contact form button{
+    width: 100px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: var(--color-primary);
+    border: none;
+    transition: 0.1s;
+}
+
+.section-contact form button:hover{
+    background: var(--color-primary-hover);
+    cursor: pointer;
 }
 
 
@@ -669,7 +736,7 @@ nav h1 {
         padding: 8px;
     }
 
-    /* ==================HALAMAN 1============================== */
+    /* ================== RESPONSIF HALAMAN 1============================== */
 
     .container-home .section-hero h1 {
         font-size: 30px;
@@ -723,7 +790,7 @@ nav h1 {
         font-size: 8px;
     }
 
-    /* =====================HALAMAN 2  =============================*/
+    /* =====================RESPONSIF HALAMAN 2  =============================*/
 
     .banner {
         height: 20vh;
@@ -842,7 +909,7 @@ nav h1 {
         padding: 5px 8px;
     }
 
-    /* ===============================HALAMAN 3=================== */
+    /* =============================== ROSPINSIF HALAMAN 3=================== */
     .container-ideas .section-ideas{
         padding-top: 70px;
     }
@@ -874,4 +941,26 @@ nav h1 {
     .ideas-card .desc-idea a{
         font-size: 12px;
     }
+
+    /* ======================RESPONSIF HALAMAN 4 =====*/
+
+    .container-contact .section-contact{
+        flex-direction: column;
+    }
+
+    .container-contact .section-contact .get-in-touch{
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+    }
+
+    .container-contact .section-contact .get-in-touch p{
+        margin-bottom: 10px;
+        color: #121212;
+    }
+    .container-contact .section-contact .form{
+        width: 100%;
+        height: 50%;
+    }
+
 }
