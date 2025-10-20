@@ -56,7 +56,7 @@ if (window.location.pathname.endsWith("product.html")) {
 
 
 
-    //fungsi utk render data json produks
+    //fungsi utk render data produks
     function renderProducts(data, containerId) {
         const container = document.getElementById(containerId);
         container.innerHTML = data.map(item => `

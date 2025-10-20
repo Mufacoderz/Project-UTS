@@ -1,4 +1,3 @@
-// =============================== KEYBOARD ===========================
 const keyboards = [
     {
         name: "Rexus Legionare MX10",
@@ -27,8 +26,6 @@ const keyboards = [
     }
 ];
 
-
-// =========================== MOUSE =============================
 const mouses = [
     {
         name: "Logitech G102 Lightsync",
@@ -57,8 +54,6 @@ const mouses = [
     }
 ];
 
-
-// ========================= MONITOR ========================
 const monitors = [
     {
         name: "LG UltraGear 24GN600",
@@ -87,8 +82,6 @@ const monitors = [
     }
 ];
 
-
-// ========================= MEJA ============================
 const desks = [
     {
         name: "Meja Gaming Eureka Z60",
@@ -117,7 +110,6 @@ const desks = [
     }
 ];
 
-// ================== KURSI GIMANG ==================
 const chairs = [
     {
         name: "Secretlab TITAN Evo 2022",
@@ -146,8 +138,6 @@ const chairs = [
     }
 ];
 
-
-// ================== HEADPHONE / HEADSET ==================
 const headphones = [
     {
         name: "Razer BlackShark V2",
@@ -176,8 +166,6 @@ const headphones = [
     }
 ];
 
-
-// ================== AKSESORI LAIN ==================
 const accessories = [
     {
         name: "Mousepad XXL RGB",

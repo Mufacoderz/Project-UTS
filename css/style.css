@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 :root{
@@ -947,6 +947,7 @@ nav h1 {
     .container-contact .section-contact{
         flex-direction: column;
         height: 80%;
+        margin-top: 40px;
     }
 
     .section-contact .get-in-touch{
