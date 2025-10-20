@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* border: 1px solid red; */
+    /* border: 1px solid red;` */
 }
 
 :root{
@@ -90,7 +90,7 @@ nav h1 {
 .cart {
 
     font-size: 20px;
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     padding: 10px;
     border-radius: 50%;
     transition: 0.3s;
@@ -98,7 +98,7 @@ nav h1 {
 }
 
 .cart:hover {
-    background-color: var(--color-primary-hover);
+    background: var(--color-primary-hover);
     transform: scale(1.1);
     cursor:pointer;
 }
@@ -156,12 +156,12 @@ nav h1 {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     color: black;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-hover);
+    background: var(--color-primary-hover);
     color: black;
 }
 
@@ -171,13 +171,13 @@ nav h1 {
 }
 
 .btn-outline:hover {
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     color: black;
 }
 
 
 .container-home .section-about {
-    background-color: white;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,7 +201,7 @@ nav h1 {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -242,7 +242,7 @@ nav h1 {
 
 .section-features .features .feature {
     flex: 1 1 280px;
-    background-color: var(--color-secondary);
+    background: var(--color-secondary);
     text-align: center;
     padding: 30px 20px;
     border-radius: 12px;
@@ -275,7 +275,7 @@ nav h1 {
 /* ===========================HALAMAN 2=============================== */
 
 .container-product {
-    background-color: var(--color-tertiary);
+    background: var(--color-tertiary);
 }
 
 .banner::after {
@@ -291,7 +291,7 @@ nav h1 {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: var(--color-tertiary);
+    background: var(--color-tertiary);
     padding: 10px 32px;
 }
 
@@ -299,7 +299,7 @@ nav h1 {
     flex: 1;
     padding: 12px 16px;
     border: 2px solid var(--color-primary);
-    background-color: var(--color-secondary);
+    background: var(--color-secondary);
     border-radius: 8px;
     outline: none;
     transition: 0.2s;
@@ -320,7 +320,7 @@ nav h1 {
 }
 
 .categories a {
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     width: 120px;
     text-align: center;
     color: #121212;
@@ -334,7 +334,7 @@ nav h1 {
 }
 
 .categories a:hover {
-    background-color: var(--color-primary-hover);
+    background: var(--color-primary-hover);
     transform: scale(1.05);
 }
 
@@ -474,7 +474,7 @@ nav h1 {
 
 /* ===========================HALAMAN 3===================================== */
 .container-ideas{
-    background-color: var(--color-tertiary);
+    background: var(--color-tertiary);
 }
 
 
@@ -497,7 +497,7 @@ nav h1 {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -509,7 +509,7 @@ nav h1 {
 }
 
 .container-ideas .section-ideas .ideas-list .ideas-card{
-    background-color: var(--color-secondary);
+    background: var(--color-secondary);
     width: 100%;
     height: 60vh;
     display: flex;
@@ -561,11 +561,42 @@ nav h1 {
 .ideas-card .desc-idea a{
     color: var(--color-primary);
     text-decoration: none;
+    width: 200px;
 }
 .ideas-card .desc-idea a:hover{
     color: var(--color-primary-hover);
     text-decoration: underline;
 }
+
+/* ==========================HALAMAN 4================================= */
+
+.container-contact{
+    background: var(--color-tertiary);
+    display: flex;justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-contact .section-contact{
+    margin-top: 100px;
+    background: var(--color-secondary);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 75%;
+}
+
+.section-contact .get-in-touch{
+    width: 50%;
+    background: var(--color-primary);
+    border-radius: 20px;
+}
+.section-contact .form{
+    width: 50%;
+}
+
+
 
 /* ==========================RESPONSIF================================= */
 
@@ -737,14 +768,14 @@ nav h1 {
     }
 
     .categories a:hover{
-        background-color: transparent;
+        background: transparent;
         text-decoration: underline;
         color: var(--color-primary);
     }
 
     .icon-category {
         display: block;
-        background-color: var(--color-primary);
+        background: var(--color-primary);
         color: white;
         padding: 0;
         border-radius: 4px;
@@ -769,7 +800,7 @@ nav h1 {
     }
 
     .icon-category:hover {
-        background-color: #67e8f9;
+        background: #67e8f9;
         cursor: pointer;
     }
 

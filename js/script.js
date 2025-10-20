@@ -29,7 +29,7 @@ if (window.location.pathname.endsWith("product.html")) {
     const category = document.querySelector('.categories')
     const openCategory = document.querySelector('.openCategory')
     const closeCategory = document.querySelector('.closeCategory')
-    const closeCategoryA = document.querySelectorAll('.list-category')
+    const closeCategoryList = document.querySelectorAll('.list-category')
 
     //fungsi utk bar kategori mobile
     function handlerCategory() {
@@ -43,10 +43,11 @@ if (window.location.pathname.endsWith("product.html")) {
         }
     }
 
-    closeCategoryA.forEach(e => {
+    closeCategoryList.forEach(e => {
         e.addEventListener('click', () => {
             category.classList.remove('active')
-            openCategory.display = 'block'
+            openCategory.display = 'block'//gkjalan gk tau knpa
+            closeCategory.display = 'none'
         })
     })
 
