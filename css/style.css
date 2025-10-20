@@ -246,14 +246,12 @@ nav h1 {
     text-align: center;
     padding: 30px 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
     height: 250px;
 }
 
 .feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .section-features .features .feature i {
@@ -518,15 +516,28 @@ nav h1 {
     gap: 10px;
     border-radius: 20px;
     overflow: hidden;
+    transition: 0.3s;
 }
 .ideas-card .image-idea{
     width: 50%;
+    overflow: hidden;
 }
 .ideas-card .image-idea img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: 0.3s;
 }
+
+.ideas-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(34, 211, 238, 0.15);
+}
+
+.ideas-card:hover img{
+    transform: scale(1.05);
+}
+
 .ideas-card .desc-idea {
     width: 50%;
     display: flex;
