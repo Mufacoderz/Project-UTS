@@ -1,10 +1,12 @@
 // SCRIPT GLOBAL
 
+
+// utk nav
 const nav = document.querySelector('.nav-list')
 const open = document.querySelector('.open');
 const close = document.querySelector('.close')
 
-//fungsi utk bar nav mobile
+
 function handlerHamburger() {
     nav.classList.toggle('active')
     if (nav.classList.contains('active')) {
@@ -19,6 +21,8 @@ function handlerHamburger() {
 open.addEventListener('click', handlerHamburger)
 close.addEventListener('click', handlerHamburger)
 
+// untk footer
+document.querySelector('#year').textContent = new Date().getFullYear()
 
 // SCRIPT UTK PRODUCT.HTML
 

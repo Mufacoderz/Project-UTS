@@ -61,7 +61,7 @@ nav h1 {
     color: var(--color-primary);
 }
 
-.nav-list {
+.nav-list { 
     display: flex;
     gap: 32px;
     font-size: 18px;
@@ -109,7 +109,6 @@ nav h1 {
 
 /* ==================================HALAMAN 1=========================================== */
 
-/* style hero */
 .container-home .section-hero {
     position: relative;
     display: flex;
@@ -663,7 +662,17 @@ nav h1 {
     cursor: pointer;
 }
 
-
+/* ================footer================ */
+footer{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+    background: var(--color-tertiary);
+    cursor: pointer;
+}
 
 /* ==========================RESPONSIF================================= */
 
@@ -947,7 +956,7 @@ nav h1 {
     .container-contact .section-contact{
         flex-direction: column;
         height: 80%;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .section-contact .get-in-touch{
