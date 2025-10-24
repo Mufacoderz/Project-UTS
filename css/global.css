@@ -58,6 +58,11 @@ nav h1 {
     cursor: pointer;
 }
 
+nav h1 a{
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+}
+
 .tech {
     color: #e5e7eb;
 }
