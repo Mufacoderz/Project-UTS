@@ -159,3 +159,56 @@
     color: #e5e7eb;
 }
 
+@media (max-width: 768px) {
+    .container-home .section-hero h1 {
+        font-size: 30px;
+    }
+
+    .container-home .section-hero p {
+        font-size: 15px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        height: 40px;
+        font-size: 14px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .container-home .section-about .about h2{
+        font-size: 25px
+    }
+
+    .section-features {
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .section-features .features {
+        gap: 15px;
+    }
+
+    .section-features .features .feature {
+        height: 150px;
+        width: 150px;
+
+    }
+
+    .section-features .features .feature i {
+        font-size: 24px;
+    }
+
+    .section-features .features .feature h3 {
+        font-size: 16px;
+    }
+
+    .section-features .features .feature p {
+        font-size: 8px;
+    }
+}

@@ -195,3 +195,121 @@
     scroll-margin-top: 210px;
 }
 
+@media (max-width: 768px) {
+    .banner {
+        height: 20vh;
+    }
+
+    .container-product .search input[type="search"]{
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .container-product .search {
+        gap: 10px;
+        padding: 5px 16px;
+    }
+
+    .categories{
+        display: none;
+    }
+
+    .categories.active {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 200px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        backdrop-filter: blur(12px);
+        background: rgba(0, 0, 0, 0.7);
+        gap: 4px;
+        z-index: 9;
+    }
+
+    .categories a {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 14px;
+        padding: 5px 9px;
+        text-align: left;
+    }
+
+    .categories a:hover{
+        background: transparent;
+        text-decoration: underline;
+        color: var(--color-primary);
+    }
+
+    .icon-category {
+        display: block;
+        background: var(--color-primary);
+        color: white;
+        padding: 0;
+        border-radius: 4px;
+        font-size: 14px;
+        transition: 1.03s;
+    }
+
+    .icon-category .closeCategory{
+        display: none;
+    }
+
+    .icon-category i {
+        transition: 1.03s;
+        font-size: 20px;
+        padding: 4px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-category:hover i {
+        transform: scale(1.2);
+    }
+
+    .icon-category:hover {
+        background: #67e8f9;
+        cursor: pointer;
+    }
+
+    .list-product-section {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .list-product-section h2 {
+        font-size: 16px;
+    }
+
+    .list-product-section div[id$="-list"] {
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+
+    .product-card {
+        width: 30%;
+    }
+
+    .product-card img {
+        height: 100px;
+    }
+
+    .product-card h3 {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    .product-card p {
+        font-size: 8px;
+        min-height: 8px;
+        margin-bottom: 5px;
+    }
+
+    .product-card .cart-btn {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+}

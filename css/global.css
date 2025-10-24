@@ -27,6 +27,11 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+::selection{
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
 main{
     background: var(--color-tertiary);
 }
@@ -127,4 +132,76 @@ footer{
     padding-bottom: 30px;
     background: var(--color-tertiary);
     cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+
+    nav{
+        padding: 6px 16px;
+    }
+
+    nav h1{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        gap: 16px;
+        backdrop-filter: blur(12px);
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+
+    .nav-list li a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 8px 0;
+        transition: 0.2s;
+    }
+
+    .nav-list li a:hover {
+        color: var(--color-primary);
+    }
+
+    .nav-right{
+        gap: 5px;
+    }
+
+    .hamburger-btn {
+        display: flex;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .hamburger-btn:hover {
+        color: var(--color-primary);
+    }
+
+    .hamburger-btn .close {
+        display: none;
+    }
+
+    .cart{
+        font-size:15px;
+        padding: 8px;
+    }
+
 }
