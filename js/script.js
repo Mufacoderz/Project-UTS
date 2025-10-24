@@ -28,8 +28,6 @@ document.querySelector('#year').textContent = new Date().getFullYear()
 
 if (window.location.pathname.endsWith("product.html")) {
 
-    AOS.init();
-
     const category = document.querySelector('.categories')
     const openCategory = document.querySelector('.openCategory')
     const closeCategory = document.querySelector('.closeCategory')
@@ -64,7 +62,7 @@ if (window.location.pathname.endsWith("product.html")) {
     function renderProducts(data, containerId) {
         const container = document.getElementById(containerId);
         container.innerHTML = data.map(item => `
-    <div class="product-card"  data-aos="fade-up">
+    <div class="product-card">
         <img src="${item.image}" alt="${item.name}" width="150">
         <h3>${item.name}</h3>
         <p>Rp ${item.price.toLocaleString('id-ID')}</p>
