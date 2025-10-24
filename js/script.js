@@ -1,6 +1,5 @@
 // SCRIPT GLOBAL
 
-
 // utk nav
 const nav = document.querySelector('.nav-list')
 const open = document.querySelector('.open');
@@ -24,6 +23,7 @@ close.addEventListener('click', handlerHamburger)
 // untk footer
 document.querySelector('#year').textContent = new Date().getFullYear()
 
+
 // SCRIPT UTK PRODUCT.HTML
 
 if (window.location.pathname.endsWith("product.html")) {
@@ -33,7 +33,6 @@ if (window.location.pathname.endsWith("product.html")) {
     const closeCategory = document.querySelector('.closeCategory')
     const closeCategoryList = document.querySelectorAll('.list-category')
 
-    //fungsi utk bar kategori mobile
     function handlerCategory() {
         category.classList.toggle('active')
         if (category.classList.contains('active')) {
@@ -48,7 +47,7 @@ if (window.location.pathname.endsWith("product.html")) {
     closeCategoryList.forEach(e => {
         e.addEventListener('click', () => {
             category.classList.remove('active')
-            openCategory.display = 'block'//gkjalan gk tau knpa
+            openCategory.display = 'block'
             closeCategory.display = 'none'
         })
     })
@@ -62,14 +61,14 @@ if (window.location.pathname.endsWith("product.html")) {
     function renderProducts(data, containerId) {
         const container = document.getElementById(containerId);
         container.innerHTML = data.map(item => `
-    <div class="product-card">
-        <img src="${item.image}" alt="${item.name}" width="150">
-        <h3>${item.name}</h3>
-        <p>Rp ${item.price.toLocaleString('id-ID')}</p>
-        <div>
-            <button class="cart-btn">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
-        </div>
-    </div>
+            <div class="product-card">
+                <img src="${item.image}" alt="${item.name}" width="150">
+                <h3>${item.name}</h3>
+                <p>Rp ${item.price.toLocaleString('id-ID')}</p>
+                <div>
+                    <button class="cart-btn">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
     `).join("");
     }
 

@@ -2,14 +2,12 @@
     background: var(--color-tertiary);
 }
 
-
 .container-ideas .section-ideas{
     width: 100%;
     padding: 100px 10%;
     gap: 30px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 .container-ideas .section-ideas h2{
     font-size: 40px;
